@@ -88,3 +88,26 @@ for (let i = 1; i <= 3; i++) {
   manager.work();
 }
 manager.collectSalary();
+
+
+
+import { Airmelon, Earthmelon, Firemelon, Melolemonmelon, Watermelon } from "./melon";
+
+const watermelon: Watermelon = new Watermelon(12.5, "Kingsize");
+const firemelon: Firemelon = new Firemelon(21, "SuperDuperSize");
+const earthmelon: Earthmelon = new Earthmelon(10, "Normalsize");
+const airmelon: Airmelon = new Airmelon(5, "Smallsize");
+const melolemonmelon: Melolemonmelon = new Melolemonmelon(13, "Kingsize");
+
+console.log(watermelon.toString());
+console.log(firemelon.toString());
+console.log(earthmelon.toString());
+console.log(airmelon.toString());
+
+console.log(melolemonmelon.toString());
+melolemonmelon.morph();
+console.log(melolemonmelon.toString());
+melolemonmelon.morph();
+console.log(melolemonmelon.toString());
+melolemonmelon.morph();
+console.log(melolemonmelon.toString());
